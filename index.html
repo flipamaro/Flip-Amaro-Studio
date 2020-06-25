@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <link rel="shortcut icon" href="../img/flipamaro.ico">
+    <title>Flip Amaro Studio</title>
+  </head>
+  <body>
+<!-- MENU -->
+    <nav class="menu">
+      <ul>
+        <li><a class="menu" href="https://www.flipamaro.com">FLIP AMARO</a></li>
+        <li><a class="menu" href="https://www.flipamaro.com/work">WORK</a></li>
+        <li><a class="menu" href="https://www.flipamaro.com/contact">CONTACT</a></li>
+        <li><a class="menu" href="https://www.flipamaro.com/shop">SHOP</a></li>
+      </ul>
+    </nav>
+    <div id="#top" class="about">
+      <img class="thisiflip" src="../img/thisisflip.png" alt="This is Flip">
+      <div class="textabout">
+        <h1>Felipe Amaro</h1>
+        <p class="description"><i>AKA: Flip Amaro.</i>I'm a mexican Graphic designer recently specialized in digital solutions.
+          I put my effort, passion and knowledge on proposals through web, motion graphics and lettering productions.
+        </p>
+      </div>
+    </div>
+  <!-- PROJECT THUMBS -->
+    <div class="projectthumbs">
+      <div class="pthumbs">
+        <img src="../img/Living-Free.png" alt="Living Free Lettering">
+      </div>
+      <div class="pthumbs">
+        <img src="../img/Make-it-worth.png" alt="Make it possible">
+      </div>
+      <div class="pthumbs">
+        <img src="../img/Bronx.png" alt="Bronx">
+      </div>
+      <div class="pthumbs">
+        <img src="../img/Elegance.png" alt="Elegance">
+      </div>
+    </div>
+    <!-- CONTACT FORM -->
+    <form action="" class="contactform">
+      <div class="form-inner">
+        <h1 class="formtitle">Contact me</h1>
+        <input type="name" name="name" placeholder="Your name here (nice to meet you!)">
+        <input type="email" name="email" placeholder="Email">
+        <textarea name="message" placeholder="What you wanna talk about?" rows="10"></textarea>
+        <div class="button-block">
+          <button type="submit" name="submit" href="/">Submit</button>
+        </div>
+      </div>
+    </form>
+<!-- FOOTER -->
+  <div class="footer">
+    <p class="footertext"><a class="fliplink"href="https://www.flipamaro.com" target="blank">Flip Amaro</a> 2020. Todos los derechos reservados</p>
+  </div>
+<!-- TOP LINK -->
+<div class="backtotop">
+  <a id="backtotop"href="#top">TOP</a>
+</div>
+<script type="text/javascript">
+$(window).scroll(function(){
+  if($(this).scrollTop()>700){
+    $("#backtotop").fadeIn();
+  }
+  else{
+    $("#backtotop").fadeOut();
+  }
+});
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#backtotop").click(function(){
+      $("html, body").animate({scrollTop: 0},200);
+    })
+  });
+</script>
+  </body>
+</html>
